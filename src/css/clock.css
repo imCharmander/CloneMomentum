@@ -1,0 +1,28 @@
+#clock-set {
+  position: absolute;
+  top: 10px;
+  transition: transform 0.3s ease;
+}
+
+#clock-set:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.clock-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background-color: black;
+  border: 5px solid gray;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#clock {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}

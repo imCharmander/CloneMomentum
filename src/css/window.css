@@ -1,0 +1,52 @@
+#window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  top: 20%;
+}
+
+.window-side {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  border: 10px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window-side__first {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 10px;
+  background-color: gray;
+  z-index: 2;
+}
+
+.window-side__second {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 10px;
+  background-color: gray;
+  z-index: 3;
+}
+
+.window-img {
+  width: 100%;
+  height: 100%;
+}
+
+.window-img > img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(100%);
+  transition: filter 0.5s ease;
+}
+
+.brightness {
+  filter: brightness(50%);
+}

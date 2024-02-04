@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/main.css" />
+    <title>cloneMomentum</title>
+  </head>
+  <body>
+    <div class="layout posi">
+      <section id="window">
+        <div class="window-side">
+          <div class="window-side__first"></div>
+          <div class="window-side__second"></div>
+          <div class="window-img brightness"></div>
+        </div>
+      </section>
+      <section id="todo-set">
+        <div id="todo-list">
+          <div class="close-icon">
+            <div></div>
+            <h2>todo-list</h2>
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="todo-part">
+            <ul id="todo-list"></ul>
+            <form id="todo-form">
+              <input
+                type="text"
+                placeholder="Write a Todo and press Enter"
+                required
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="user-state">
+        <div id="user-state-list">
+          <div class="close-icon">
+            <div></div>
+            <h2>User</h2>
+            <i class="fas fa-times"></i>
+          </div>
+          <div id="user-info">
+            <div id="username"></div>
+            <div id="weather-info">
+              <span></span>
+              <span></span>
+            </div>
+            <button>로그아웃</button>
+          </div>
+        </div>
+      </section>
+      <header id="header">
+        <div></div>
+        <h1>welcome Momentum</h1>
+        <div id="header__user-info"><i class="fas fa-user"></i></div>
+      </header>
+      <div id="table-set">
+        <div class="table">
+          <section id="clock-set">
+            <div class="clock-part">
+              <h2 id="clock">00:00</h2>
+            </div>
+          </section>
+          <div id="todo-list-modar">
+            <h5>TO DO</h5>
+          </div>
+          <div id="quote">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/js/clock.js"></script>
+    <script src="src/js/modar.js"></script>
+    <script src="src/js/todo.js"></script>
+    <script src="src/js/backgrund.js"></script>
+    <script src="src/js/userModar.js"></script>
+    <script src="src/js/user.js"></script>
+    <script src="src/js/weather.js"></script>
+  </body>
+</html>
